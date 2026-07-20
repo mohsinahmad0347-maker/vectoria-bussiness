@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria – The Great Business | Premium Global Corporate Solutions</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Victoria - The Great Business delivers premium corporate advisory, advanced artificial intelligence integrations, global cloud infrastructure, and world-class financial planning for Fortune 500 enterprises.">
+    <meta name="keywords" content="Victoria Business, Enterprise Solutions, AI Integration, Cloud Architecture, Cybersecurity, Corporate Strategy">
+    <meta name="author" content="Victoria Corp">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- --- Custom Cursor Follower --- -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-glow" id="customCursorGlow"></div>
+
+    <!-- --- Preloader Screen --- -->
+    <div class="preloader" id="preloader">
+        <div class="loader-logo" id="loaderLogo">VICTORIA<span>.</span></div>
+        <div class="loader-bar-bg">
+            <div class="loader-bar" id="loaderBar"></div>
+        </div>
+    </div>
+
+    <!-- --- Scroll Progress Indicator --- -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- --- Floating Background Blobs --- -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- --- Navigation Bar --- -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-crown"></i></div>
+                <div class="logo-text">VICTORIA<span>.</span></div>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#blog" class="nav-link">Insights</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="navbar-actions">
+                <button class="nav-btn" id="searchBtn" aria-label="Search Website"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="nav-btn" id="themeToggleBtn" aria-label="Toggle Theme"><i class="fa-solid fa-sun"></i></button>
+                <a href="#contact" class="btn btn-primary btn-ripple" style="padding: 10px 20px; font-size: 0.85rem; display: none; @media(min-width: 768px){display: flex;}">Get Consultant</a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Open Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- --- Search Overlay --- -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search insights, services, processes..." autofocus>
+            <button class="search-close" id="searchCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+    <!-- --- Hero Section (Carousel) --- -->
+    <section class="hero" id="home">
+        <div class="carousel-container" id="heroCarousel">
+            
+            <!-- Slide 1 -->
+            <div class="carousel-slide active">
+                <div class="slide-img-container">
+                    <img src="assets/hero1.png" alt="Enterprise Leadership Skyscraper" class="slide-img">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="container slide-content">
+                    <div class="slide-text-box">
+                        <h1 class="slide-headline">Innovating the <span class="gradient-text">Future of Enterprise</span></h1>
+                        <p class="slide-desc">Empowering organizations with cutting-edge operations architectures, robust cybersecurity networks, and strategic leadership paradigms designed to dominate global markets.</p>
+                        <div class="slide-actions">
+                            <a href="#contact" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#services" class="btn btn-secondary">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+                <div class="slide-img-container">
+                    <img src="assets/hero2.png" alt="Advanced Boardroom Digital Analytics" class="slide-img">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="container slide-content">
+                    <div class="slide-text-box">
+                        <h1 class="slide-headline">Architects of <span class="gradient-text">Digital Transformation</span></h1>
+                        <p class="slide-desc">We design, deploy, and scale cognitive AI networks and custom cloud configurations that insulate your systems from threat matrices while expediting product delivery.</p>
+                        <div class="slide-actions">
+                            <a href="#contact" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#services" class="btn btn-secondary">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+                <div class="slide-img-container">
+                    <img src="assets/hero3.png" alt="Cognitive Tech Center" class="slide-img">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="container slide-content">
+                    <div class="slide-text-box">
+                        <h1 class="slide-headline">Pioneering <span class="gradient-text">Strategic Advisory</span></h1>
+                        <p class="slide-desc">Deploying precision metrics, data modeling, and risk assessments that clear capital bottlenecks, ensuring fluid cash structures and frictionless scaling protocols.</p>
+                        <div class="slide-actions">
+                            <a href="#contact" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#services" class="btn btn-secondary">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+                <div class="slide-img-container">
+                    <img src="assets/hero4.png" alt="Global Trading Analytics" class="slide-img">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="container slide-content">
+                    <div class="slide-text-box">
+                        <h1 class="slide-headline">Global Reach. <span class="gradient-text">Unrivaled Execution.</span></h1>
+                        <p class="slide-desc">A highly specialized network of global partners, elite technicians, and veteran financial consultants waiting to align your enterprise for institutional success.</p>
+                        <div class="slide-actions">
+                            <a href="#contact" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#services" class="btn btn-secondary">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel navigation -->
+        <button class="carousel-btn carousel-btn-prev" id="carouselPrevBtn" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn carousel-btn-next" id="carouselNextBtn" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="carousel-pagination" id="carouselPagination"></div>
+
+        <!-- Parallax floating glass cards -->
+        <div class="floating-shapes">
+            <div class="shape shape-1" id="parallaxShape1"></div>
+            <div class="shape shape-2" id="parallaxShape2"></div>
+        </div>
+
+        <!-- Floating stats panel inside hero -->
+        <div class="hero-stats-panel glass-panel">
+            <div class="hero-stats-grid">
+                <div class="hero-stat-item">
+                    <div class="hero-stat-num">$2B+</div>
+                    <div class="hero-stat-label">Transactions Managed</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="hero-stat-num">99.8%</div>
+                    <div class="hero-stat-label">Client Retention</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="mouse-scroller">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- About Section --- -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                
+                <div class="about-img-box reveal-slide-left">
+                    <div class="about-img-frame">
+                        <img src="assets/about.png" alt="Collaborative corporate strategy session" style="width: 100%; object-fit: cover;">
+                    </div>
+                </div>
+
+                <div class="about-content reveal-slide-right">
+                    <span class="section-subtitle">Our Legacy</span>
+                    <h2 class="section-title" style="text-align: left; margin-left: 0;">Pioneering Enterprise Distinction</h2>
+                    <p class="about-text">Founded on principles of absolute integrity, intellectual vigor, and visionary foresight, Victoria represents the gold standard of modern corporate architecture. We steer ambitious institutions through regulatory complexities, financial horizons, and cognitive technological shifts.</p>
+                    
+                    <div class="about-details">
+                        <div class="about-detail-item">
+                            <div class="about-detail-icon"><i class="fa-solid fa-compass"></i></div>
+                            <div class="about-detail-text">
+                                <h3 class="about-detail-title">Our Vision</h3>
+                                <p class="about-detail-desc">To establish robust digital frameworks and bulletproof risk strategies that enable frictionless borderless commercial operations.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-detail-item">
+                            <div class="about-detail-icon"><i class="fa-solid fa-bullseye"></i></div>
+                            <div class="about-detail-text">
+                                <h3 class="about-detail-title">Our Mission</h3>
+                                <p class="about-detail-desc">To leverage data modeling, machine optimization, and financial auditing matrices to protect and compound institutional resources.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-counters">
+                        <div class="about-counter-item">
+                            <div class="about-counter-num count-num" data-target="99">0</div>
+                            <div class="about-counter-label">Satisfaction Index</div>
+                        </div>
+                        <div class="about-counter-item">
+                            <div class="about-counter-num count-num" data-target="15">0</div>
+                            <div class="about-counter-label">Global Offices</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#why-us" class="btn btn-primary" style="margin-top: 40px; align-self: flex-start;">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Why Choose Us Section --- -->
+    <section class="section" id="why-us" style="background-color: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Core Assets</span>
+                <h2 class="section-title">Why The Industry Chooses Victoria</h2>
+                <p style="color: var(--text-secondary);">We combine seasoned financial methodologies with cutting-edge technological defense solutions, driving optimal institutional scaling configurations.</p>
+            </div>
+
+            <div class="why-grid">
+                
+                <!-- Card 1 -->
+                <div class="why-card glass-panel reveal-zoom delay-100">
+                    <div class="why-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3 class="why-title">Innovation</h3>
+                    <p class="why-desc">Redefining market trajectories with early adoption matrices and adaptive strategic frameworks.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="why-card glass-panel reveal-zoom delay-200">
+                    <div class="why-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3 class="why-title">Professional Team</h3>
+                    <p class="why-desc">Led by veteran corporate advisors, threat mitigators, and elite system engineers.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="why-card glass-panel reveal-zoom delay-300">
+                    <div class="why-icon"><i class="fa-solid fa-cloud"></i></div>
+                    <h3 class="why-title">Cloud Solutions</h3>
+                    <p class="why-desc">High-availability networks engineered to adapt to extreme high-load transactional models.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="why-card glass-panel reveal-zoom delay-400">
+                    <div class="why-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3 class="why-title">AI Integration</h3>
+                    <p class="why-desc">Injecting proprietary cognitive models that optimize pipeline yield and automate risk modeling.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="why-card glass-panel reveal-zoom delay-100">
+                    <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="why-title">Cyber Security</h3>
+                    <p class="why-desc">Zero-trust architecture, active intrusion mapping, and high-level encryption systems.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="why-card glass-panel reveal-zoom delay-200">
+                    <div class="why-icon"><i class="fa-solid fa-chess-king"></i></div>
+                    <h3 class="why-title">Business Strategy</h3>
+                    <p class="why-desc">Algorithmic capital allocation and corporate roadmaps aligned with regulatory shifts.</p>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="why-card glass-panel reveal-zoom delay-300">
+                    <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3 class="why-title">Customer Support</h3>
+                    <p class="why-desc">A committed 24/7 technical operations desk mapping responses to strict SLAs.</p>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="why-card glass-panel reveal-zoom delay-400">
+                    <div class="why-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3 class="why-title">Global Network</h3>
+                    <p class="why-desc">Direct corporate channels spanning North America, EU hubs, and dynamic Asian corridors.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Services Section --- -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Solutions Hub</span>
+                <h2 class="section-title">Suite of Elite Corporate Services</h2>
+                <p style="color: var(--text-secondary);">Empowering dynamic institutions through a suite of integrated financial, structural, and digital strategies.</p>
+            </div>
+
+            <div class="services-grid">
+                
+                <!-- Service 1 -->
+                <div class="service-card reveal-slide-left delay-100">
+                    <div class="service-icon"><i class="fa-solid fa-vault"></i></div>
+                    <h3 class="service-title">Financial Consulting</h3>
+                    <p class="service-desc">Precision cash flow models, strategic tax allocation schemes, and global capital deployment advisory.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3 class="service-title">Tech Architecture</h3>
+                    <p class="service-desc">Engineering resilient system designs, modular APIs, and redundant physical compute grids.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card reveal-slide-right delay-100">
+                    <div class="service-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3 class="service-title">Cyber Defense</h3>
+                    <p class="service-desc">Military-grade threat mapping, smart endpoint monitoring, and instant incident resolution.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card reveal-slide-left delay-100">
+                    <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h3 class="service-title">AI Infrastructure</h3>
+                    <p class="service-desc">Constructing custom learning models, predictive intelligence nodes, and automated pipeline scripts.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <h3 class="service-title">Cloud Systems</h3>
+                    <p class="service-desc">Deploying Kubernetes orchestration, serverless execution lanes, and multi-region mirrors.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card reveal-slide-right delay-100">
+                    <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3 class="service-title">Global Scaling</h3>
+                    <p class="service-desc">Facilitating cross-border legal compliance mapping, local market research, and local supply setup.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="service-card reveal-slide-left delay-100">
+                    <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3 class="service-title">Operations Audit</h3>
+                    <p class="service-desc">Assessing organizational redundancies, streamlining logistics lanes, and scaling operational efficiency.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-chess"></i></div>
+                    <h3 class="service-title">Brand Leadership</h3>
+                    <p class="service-desc">Developing premium positioning narratives, corporate communications, and high-impact media strategies.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Service 9 -->
+                <div class="service-card reveal-slide-right delay-100">
+                    <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <h3 class="service-title">Venture Development</h3>
+                    <p class="service-desc">Structuring corporate spin-offs, identifying target M&A opportunities, and raising institutional rounds.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Service 10 -->
+                <div class="service-card reveal-slide-left delay-100">
+                    <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3 class="service-title">Data Intelligence</h3>
+                    <p class="service-desc">Building enterprise data warehouses, ETL pipelines, and real-time visualization dashboards.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Service 11 -->
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3 class="service-title">Compliance Risk</h3>
+                    <p class="service-desc">Pre-empting regulatory reviews, auditing data practices, and mapping AML protocol implementations.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Service 12 -->
+                <div class="service-card reveal-slide-right delay-100">
+                    <div class="service-icon"><i class="fa-solid fa-users-gear"></i></div>
+                    <h3 class="service-title">Customer Retention</h3>
+                    <p class="service-desc">Structuring loyalty architectures, telemetry engines, and high-tier VIP reward networks.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Featured Projects Section --- -->
+    <section class="section" id="portfolio" style="background-color: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Excellence Log</span>
+                <h2 class="section-title">Case Studies & Global Implementations</h2>
+                <p style="color: var(--text-secondary);">A curated portfolio highlighting major solutions delivered to international enterprises and tech hubs.</p>
+            </div>
+
+            <!-- Portfolio Filtering Buttons -->
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">All Engagements</button>
+                <button class="filter-btn" data-filter="technology">Technology</button>
+                <button class="filter-btn" data-filter="finance">Finance</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+            </div>
+
+            <!-- Masonry Grid -->
+            <div class="portfolio-grid">
+                
+                <!-- Project 1 -->
+                <div class="portfolio-item reveal-zoom" data-category="finance" data-img="assets/hero1.png" data-title="Capital Optimization Campaign" data-desc="Re-architected capital structures for a top-tier European shipping conglomerate, unlocking $240M in dormant liquidity.">
+                    <div class="portfolio-item-bg project-1"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Finance</span>
+                        <h3 class="portfolio-title">Capital Optimization Campaign</h3>
+                        <p class="portfolio-desc">Re-architected capital structures for a top-tier European shipping conglomerate, unlocking $240M in dormant liquidity.</p>
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-expand"></i></div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item reveal-zoom delay-100" data-category="technology" data-img="assets/hero2.png" data-title="Enterprise Cloud Migration" data-desc="orchestrated secure multi-region Kubernetes deployments for a global logistics network handling 80M daily parcels.">
+                    <div class="portfolio-item-bg project-2"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Technology</span>
+                        <h3 class="portfolio-title">Enterprise Cloud Migration</h3>
+                        <p class="portfolio-desc">Orchestrated secure multi-region Kubernetes deployments for a global logistics network handling 80M daily parcels.</p>
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-expand"></i></div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item reveal-zoom" data-category="technology" data-img="assets/hero3.png" data-title="Proprietary Cognitive AI Core" data-desc="Built and deployed a localized model optimizing supply forecasting accuracy by 32% for retail networks.">
+                    <div class="portfolio-item-bg project-3"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Technology</span>
+                        <h3 class="portfolio-title">Proprietary Cognitive AI Core</h3>
+                        <p class="portfolio-desc">Built and deployed a localized model optimizing supply forecasting accuracy by 32% for retail networks.</p>
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-expand"></i></div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item reveal-zoom delay-100" data-category="security" data-img="assets/hero4.png" data-title="Zero-Trust Perimeter Build" data-desc="Secured communications networks and storage vaults for a sovereign banking institution across 400 branches.">
+                    <div class="portfolio-item-bg project-4"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Security</span>
+                        <h3 class="portfolio-title">Zero-Trust Perimeter Build</h3>
+                        <p class="portfolio-desc">Secured communications networks and storage vaults for a sovereign banking institution across 400 branches.</p>
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-expand"></i></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Lightbox Popup --- -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- --- Business Process Timeline Section --- -->
+    <section class="section timeline-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Execution Pipeline</span>
+                <h2 class="section-title">The Client Journey Lifecycle</h2>
+                <p style="color: var(--text-secondary);">An active, chronological overview of how we align, build, protect, and scale your systems.</p>
+            </div>
+
+            <div class="timeline-wrapper reveal">
+                <div class="timeline-line"></div>
+                <div class="timeline-progress" id="timelineProgress"></div>
+                
+                <div class="timeline-container">
+                    
+                    <!-- Step 1 -->
+                    <div class="timeline-step active" data-progress="12.5">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <span class="timeline-num">01. Consultation</span>
+                            <h3 class="timeline-title">Initial Audit</h3>
+                            <p class="timeline-desc">Mapping structural bottlenecks, security loopholes, and resource layouts.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-step" data-progress="25">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <span class="timeline-num">02. Planning</span>
+                            <h3 class="timeline-title">Strategy Outline</h3>
+                            <p class="timeline-desc">Generating architecture blueprints and capital optimization models.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-step" data-progress="37.5">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <span class="timeline-num">03. Design</span>
+                            <h3 class="timeline-title">System Blueprints</h3>
+                            <p class="timeline-desc">Validating UI flow components and zero-trust protocol configurations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-step" data-progress="50">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <span class="timeline-num">04. Development</span>
+                            <h3 class="timeline-title">Engine Build</h3>
+                            <p class="timeline-desc">Coding core APIs, provisioning secure clouds, and training neural models.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-step" data-progress="62.5">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <span class="timeline-num">05. Testing</span>
+                            <h3 class="timeline-title">Stress Simulation</h3>
+                            <p class="timeline-desc">Simulating DDoS raids, high traffic, and checking compliance protocols.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="timeline-step" data-progress="75">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <span class="timeline-num">06. Launch</span>
+                            <h3 class="timeline-title">Global Deployment</h3>
+                            <p class="timeline-desc">Zero-downtime routing swaps and direct dashboard provisioning.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 7 -->
+                    <div class="timeline-step" data-progress="87.5">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <span class="timeline-num">07. Marketing</span>
+                            <h3 class="timeline-title">Asset Scaling</h3>
+                            <p class="timeline-desc">Executing dynamic positioning campaigns and media deployment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 8 -->
+                    <div class="timeline-step" data-progress="100">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <span class="timeline-num">08. Support</span>
+                            <h3 class="timeline-title">Active Ops Desk</h3>
+                            <p class="timeline-desc">Continual maintenance, server optimization, and threat audits.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Team Section --- -->
+    <section class="section" id="team" style="background-color: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Leadership</span>
+                <h2 class="section-title">The Corporate Council</h2>
+                <p style="color: var(--text-secondary);">An elite assembly of corporate visionaries, digital architects, and financial navigators.</p>
+            </div>
+
+            <div class="team-grid">
+                
+                <!-- Member 1 -->
+                <div class="team-card reveal-slide-left">
+                    <div class="team-img-box">
+                        <img src="assets/about.png" alt="Victoria Sterling" class="team-img" style="filter: brightness(0.9) contrast(1.1);">
+                        <div class="team-socials">
+                            <a href="#" class="team-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="team-social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Victoria Sterling</h3>
+                        <div class="team-role">Chief Executive Officer</div>
+                        <p class="team-exp">20+ Years Corporate Mergers & Strategy</p>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-card reveal">
+                    <div class="team-img-box">
+                        <img src="assets/about.png" alt="Marcus Vance" class="team-img" style="filter: hue-rotate(120deg) brightness(0.9);">
+                        <div class="team-socials">
+                            <a href="#" class="team-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="team-social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Marcus Vance</h3>
+                        <div class="team-role">Chief Technology Officer</div>
+                        <p class="team-exp">Ex-Defense Cyber Threat Specialist</p>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="team-card reveal-slide-right">
+                    <div class="team-img-box">
+                        <img src="assets/about.png" alt="Sarah Lin" class="team-img" style="filter: hue-rotate(240deg) brightness(0.9);">
+                        <div class="team-socials">
+                            <a href="#" class="team-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="team-social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Sarah Lin</h3>
+                        <div class="team-role">Director of AI Architectures</div>
+                        <p class="team-exp">Stanford Cognitive Compute Fellow</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Testimonial Section --- -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Verification</span>
+                <h2 class="section-title">Endorsements from the Frontier</h2>
+                <p style="color: var(--text-secondary);">Direct accounts from directors, operations leads, and founders we partner with.</p>
+            </div>
+
+            <div class="testimonial-wrapper glass-panel reveal">
+                <div class="testimonial-track" id="testimonialTrack">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-img" style="background-image: linear-gradient(135deg, var(--color-accent), var(--color-primary));"></div>
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Victoria transformed our core digital architecture within 90 days. Our API response latency dropped by 40% while active cloud expenses fell by a quarter. Their advisory division is peerless."</p>
+                        <h3 class="testimonial-author">Gregory Reynolds</h3>
+                        <span class="testimonial-company">Chief Operations Officer, Lexis Capital Group</span>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-img" style="background-image: linear-gradient(135deg, var(--color-primary), #000000);"></div>
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"In a period of immense cybersecurity volatility, Victoria stepped in and successfully deployed a zero-trust model across our retail nodes. Exceptionally professional, rapid execution."</p>
+                        <h3 class="testimonial-author">Amelia Kincaid</h3>
+                        <span class="testimonial-company">Director of Information Security, Apex Fintech Corp</span>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-img" style="background-image: linear-gradient(135deg, #008080, var(--color-accent));"></div>
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"The financial modeling consulting offered by Victoria unlocked massive growth lanes in East Asian corridors. A robust partnership we plan to sustain indefinitely."</p>
+                        <h3 class="testimonial-author">Hiroshi Tanaka</h3>
+                        <span class="testimonial-company">President, Tanaka Logistics & Supply</span>
+                    </div>
+
+                </div>
+
+                <div class="testimonial-bullets" id="testimonialBullets"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Business Statistics Counter --- -->
+    <section class="section stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                
+                <div class="stat-item reveal-zoom">
+                    <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <div class="stat-num count-num" data-target="500">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+
+                <div class="stat-item reveal-zoom delay-100">
+                    <div class="stat-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <div class="stat-num count-num" data-target="300">0</div>
+                    <div class="stat-label">Enterprise Clients</div>
+                </div>
+
+                <div class="stat-item reveal-zoom delay-200">
+                    <div class="stat-icon"><i class="fa-solid fa-user-gear"></i></div>
+                    <div class="stat-num count-num" data-target="50">0</div>
+                    <div class="stat-label">Industry Experts</div>
+                </div>
+
+                <div class="stat-item reveal-zoom delay-300">
+                    <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div class="stat-num count-num" data-target="15">0</div>
+                    <div class="stat-label">Years of Distinction</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Pricing Plans Section --- -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Pricing Guide</span>
+                <h2 class="section-title">Transparent Architecture Tiers</h2>
+                <p style="color: var(--text-secondary);">Enterprise alignments priced to adapt to your scaling requirements and compliance needs.</p>
+            </div>
+
+            <div class="pricing-grid">
+                
+                <!-- Starter Tier -->
+                <div class="pricing-card reveal-slide-left">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">For emerging business entities</p>
+                    </div>
+                    <div class="pricing-price">$2,499<span>/mo</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Core Financial Consulting</li>
+                        <li><i class="fa-solid fa-check"></i> Cloud Setup Review</li>
+                        <li><i class="fa-solid fa-check"></i> Monthly Compliance Audits</li>
+                        <li><i class="fa-solid fa-check"></i> Next-Day Email Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary" style="width: 100%;">Select Tier</a>
+                </div>
+
+                <!-- Professional Tier (Popular) -->
+                <div class="pricing-card popular reveal-zoom">
+                    <div class="popular-badge">Recommended</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">Standard enterprise alignment</p>
+                    </div>
+                    <div class="pricing-price">$5,999<span>/mo</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Advanced Advisory & Audits</li>
+                        <li><i class="fa-solid fa-check"></i> Kubernetes Deploy Setup</li>
+                        <li><i class="fa-solid fa-check"></i> Active Intrusion Defense</li>
+                        <li><i class="fa-solid fa-check"></i> 24/7 SLA Response Support</li>
+                        <li><i class="fa-solid fa-check"></i> Monthly Strategy Alignment</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-accent" style="width: 100%;">Select Tier</a>
+                </div>
+
+                <!-- Enterprise Tier -->
+                <div class="pricing-card reveal-slide-right">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">Bespoke Fortune 500 options</p>
+                    </div>
+                    <div class="pricing-price">$12,499<span>/mo</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Custom AI & Model Training</li>
+                        <li><i class="fa-solid fa-check"></i> Sovereign Bank Integrations</li>
+                        <li><i class="fa-solid fa-check"></i> Continuous Zero-Trust Support</li>
+                        <li><i class="fa-solid fa-check"></i> Dedicated Strategic Advisor</li>
+                        <li><i class="fa-solid fa-check"></i> Dedicated Server Nodes</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary" style="width: 100%;">Select Tier</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FAQ Accordion Section --- -->
+    <section class="section" id="faq" style="background-color: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">FAQ Library</span>
+                <h2 class="section-title">Frequently Answered Queries</h2>
+                <p style="color: var(--text-secondary);">Direct answers to core queries regarding operations alignment, cybersecurity protocols, and advisory terms.</p>
+            </div>
+
+            <div class="faq-accordion reveal">
+                
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span class="faq-title">Why choose Victoria?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p>We combine highly specialized corporate advisory expertise with state-of-the-art technological defense protocols. Unlike generic consultants, we construct, deploy, and safeguard the scaling systems we suggest.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span class="faq-title">What industries do you serve?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p>We primarily align systems for companies in global logistics, fintech networks, retail supply lines, sovereign banking, and high-frequency SaaS tech providers.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span class="faq-title">How long does a project take?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p>A standard audit is completed inside 14 business days. Cloud migrations, cognitive AI model installations, and system re-architecting typically require 60 to 90 days depending on scale parameters.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span class="faq-title">Do you provide support?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes, all active engagements include dedicated technical account managers and our 24/7 Operations Control Desk, managed against strict SLA targets.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span class="faq-title">Can businesses scale with your solutions?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p>All our systems utilize automated scaling configurations, high-availability clouds, and modular micro-services, ensuring they absorb sudden traffic and transactional multipliers smoothly.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span class="faq-title">How secure are your services?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Our technologies align with zero-trust architectural models, integrating TLS 1.3 mirrors, secure hardware modules, and cryptographic key rotations to resist external intrusion attempts.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span class="faq-title">Do you offer cloud migration?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes, we offer zero-downtime, fully audited transition tracks from legacy bare-metal server structures to optimized multi-cloud and hybrid environments.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span class="faq-title">What technologies do you use?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p>We deploy using React/Next.js and Node engines, secure Kubernetes clusters on AWS/GCP, Rust/Go microservices, localized Python LLMs, and zero-trust cloud flare perimeters.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Blog Section --- -->
+    <section class="section" id="blog">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Insights</span>
+                <h2 class="section-title">The Victoria Research Journal</h2>
+                <p style="color: var(--text-secondary);">Strategic updates on cloud trends, cybersecurity defense, regulatory mandates, and market shifts.</p>
+            </div>
+
+            <div class="blog-grid">
+                
+                <!-- Article 1 -->
+                <div class="blog-card reveal-slide-left">
+                    <div class="blog-img-box">
+                        <img src="assets/hero1.png" alt="Strategic growth analytics graph" class="blog-img">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>July 15, 2026</span>
+                            <span>•</span>
+                            <span>Victoria Advisory</span>
+                        </div>
+                        <h3 class="blog-title">Mitigating Operational Bottlenecks in Post-Merger Deployments</h3>
+                        <a href="#contact" class="blog-link">Read Insights <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="blog-card reveal">
+                    <div class="blog-img-box">
+                        <img src="assets/hero2.png" alt="Securing data visual theme" class="blog-img">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>June 28, 2026</span>
+                            <span>•</span>
+                            <span>Security Division</span>
+                        </div>
+                        <h3 class="blog-title">Establishing Zero-Trust Perimeters in High-Load Financial Nets</h3>
+                        <a href="#contact" class="blog-link">Read Insights <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="blog-card reveal-slide-right">
+                    <div class="blog-img-box">
+                        <img src="assets/hero3.png" alt="High speed cloud server network" class="blog-img">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>May 12, 2026</span>
+                            <span>•</span>
+                            <span>Tech Infrastructure</span>
+                        </div>
+                        <h3 class="blog-title">Scale Parameters: Optimizing Multi-Region Clusters for Low Latency</h3>
+                        <a href="#contact" class="blog-link">Read Insights <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Contact Section --- -->
+    <section class="section" id="contact" style="background-color: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">Initiate Strategic Consultation</h2>
+                <p style="color: var(--text-secondary);">Direct connection to our operations office. Enter details below to schedule an advisory alignment session.</p>
+            </div>
+
+            <div class="contact-grid">
+                
+                <!-- Left Details & Map -->
+                <div class="contact-info-column reveal-slide-left">
+                    
+                    <div class="contact-card-box">
+                        
+                        <!-- Address -->
+                        <div class="contact-card-item glass-panel">
+                            <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-card-details">
+                                <h4>Global Headquarters</h4>
+                                <p>500 Fifth Avenue, Floor 45, New York, NY 10110</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-card-item glass-panel">
+                            <div class="contact-card-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="contact-card-details">
+                                <h4>Direct Operations Line</h4>
+                                <p>+1 (800) 555-VICTORIA</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-card-item glass-panel">
+                            <div class="contact-card-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                            <div class="contact-card-details">
+                                <h4>Secure Inquiries</h4>
+                                <p>strategy@victoria-greatbusiness.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Modern Google Map Styled Embed or Premium Layout Mock -->
+                    <div class="map-container">
+                        <!-- Premium Interactive Dark Theme Google Map Styled Embed -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.428257005021!2d-73.98226068459385!3d40.75389657932822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590059c25925%3A0xe54e6ff407fcf8f6!2s500%205th%20Ave%2C%20New%20York%2C%20NY%2010110!5e0!3m2!1sen!2sus!4v1691234567890!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; filter: invert(90%) hue-rotate(180deg) brightness(0.9) contrast(1.1); pointer-events: none;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Victoria Global HQ Map">
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <!-- Right Form -->
+                <div class="contact-form glass-panel reveal-slide-right">
+                    <form id="contactForm" novalidate>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-input" id="formName" placeholder=" " required>
+                            <label class="form-label" for="formName">Full Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-input" id="formEmail" placeholder=" " required>
+                            <label class="form-label" for="formEmail">Corporate Email</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-input" id="formCompany" placeholder=" ">
+                            <label class="form-label" for="formCompany">Company / Institution</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" class="form-input" id="formPhone" placeholder=" ">
+                            <label class="form-label" for="formPhone">Direct Phone Number</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-input" id="formMessage" placeholder=" " required></textarea>
+                            <label class="form-label" for="formMessage">Briefly describe the requirements...</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-ripple" style="width: 100%;" id="submitFormBtn">
+                            Submit Inquiry <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        
+                        <div class="form-response-msg" id="formResponseMsg"></div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Newsletter Section --- -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-content reveal">
+                <h2 class="newsletter-title">Subscribe to the Strategic Brief</h2>
+                <p class="newsletter-desc">Receive weekly indices, security alerts, and advanced operations insights compiled directly by the corporate council.</p>
+                <form class="newsletter-form" id="newsletterForm" novalidate>
+                    <input type="email" class="newsletter-input" id="newsletterEmail" placeholder="corporate-officer@company.com" required aria-label="Corporate Email">
+                    <button type="submit" class="btn btn-accent btn-ripple">Subscribe <i class="fa-solid fa-bell"></i></button>
+                </form>
+                <div class="form-response-msg" id="newsletterResponseMsg"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Footer --- -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- About Col -->
+                <div class="footer-col-about reveal">
+                    <a href="#home" class="logo" style="margin-bottom: 20px;">
+                        <div class="logo-icon"><i class="fa-solid fa-crown"></i></div>
+                        <div class="logo-text" style="color: var(--text-primary);">VICTORIA<span>.</span></div>
+                    </a>
+                    <p>Driving digital transformation, optimizing capital infrastructures, and mapping defensive perimeters for global institutions.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links Col -->
+                <div class="footer-col reveal delay-100">
+                    <h4>Quick Actions</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home Base</a></li>
+                        <li><a href="#about">About Victoria</a></li>
+                        <li><a href="#why-us">Core Assets</a></li>
+                        <li><a href="#portfolio">Case Studies</a></li>
+                        <li><a href="#pricing">Alignments Pricing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Col -->
+                <div class="footer-col reveal delay-200">
+                    <h4>Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Financial Advisory</a></li>
+                        <li><a href="#services">System Architectures</a></li>
+                        <li><a href="#services">Zero-Trust Defense</a></li>
+                        <li><a href="#services">Cognitive AI Dev</a></li>
+                        <li><a href="#services">Cloud Deployments</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Col -->
+                <div class="footer-col reveal delay-300">
+                    <h4>Secure Contact</h4>
+                    <ul class="footer-info">
+                        <li><i class="fa-solid fa-location-dot"></i> New York HQ, Floor 45</li>
+                        <li><i class="fa-solid fa-phone"></i> +1 (800) 555-VICTORIA</li>
+                        <li><i class="fa-solid fa-envelope"></i> strategy@victoria-greatbusiness.com</li>
+                        <li><i class="fa-solid fa-clock"></i> Mon - Fri / 09:00 - 18:00 EST</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Victoria - The Great Business. All corporate assets and strategies reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Protocol</a>
+                    <a href="#">Terms of Engagement</a>
+                    <a href="#">Security Charter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- --- Back to Top Button --- -->
+    <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- --- Floating Action Button (FAB) --- -->
+    <div class="fab-container">
+        <button class="fab-btn" aria-label="Quick Actions Link"><i class="fa-solid fa-plus"></i></button>
+        <div class="fab-menu">
+            <a href="#contact" class="fab-item" title="Schedule Consultation"><i class="fa-solid fa-calendar-days"></i></a>
+            <a href="tel:+18005558428" class="fab-item" title="Secure Operations Line"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:strategy@victoria-greatbusiness.com" class="fab-item" title="Secure Email Inquiries"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <!-- --- Cookie Consent Banner --- -->
+    <div class="cookie-banner glass-panel" id="cookieBanner">
+        <div class="cookie-text">
+            This workspace utilizes performance caches, zero-trust tokens, and security audits to optimize user telemetry mapping. Learn more in our <a href="#" class="text-gold">Privacy Policy</a>.
+        </div>
+        <div class="cookie-actions">
+            <button class="btn btn-accent btn-ripple" id="acceptCookiesBtn" style="padding: 8px 16px; font-size: 0.8rem;">Accept Audit</button>
+            <button class="btn btn-secondary" id="declineCookiesBtn" style="padding: 8px 16px; font-size: 0.8rem; border-color: transparent;">Decline</button>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
